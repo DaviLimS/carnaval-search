@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your carnival block</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="search-engine.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="top">        
+                <p class="miniText">FIND YOUR BLOCK</p>
+                <h1>Find the <span>best carnival blocks</span> of 2023</h1>
+            </div>       
+
+            <form class="search">
+                <div class="search-fild input">   
+                    <label class="sr-only" for="name">Search for Name</label>
+                    <i class="ph-magnifying-glass-light"></i>
+                    <input type="search" name="name" id="name" placeholder="Search for Name">
+                </div>
+
+                <div class="search-fild select">
+                    <label class="sr-only" for="city">Select a City</label>
+                    <i class="ph-map-pin-light"></i>
+                    <select name="city" id="city">
+                        <option value="0" selected>Select a City</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="BA">Bahia</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Florianópolis</option>
+                    </select>
+                    <i class="ph-caret-down-light"></i>
+                </div>
+                <button onclick="search();">Search Now</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <section class="top">
+                <h1>Recommended Blocks</h1>
+                <div class="view">                   
+                    <button class="primary">LIST</button>
+                    <button class="secondary">MAP</button>
+                </div>
+            </section>
+            <secton class="cards">
+                <div class="card" id="SP">
+                    <img class="imgCards" src="assets/one-block.svg" alt="python">
+                    <h4>Grandpa's python doesn't climb anymore</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        São Paulo - SP
+                    </div>
+                </div>
+                <div class="card" id="SC">
+                    <img class="imgCards" src="assets/two-block.svg" alt="null">
+                    <h4>Everyone Null</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Florianópolis - SC
+                    </div>
+                </div>
+                <div class="card" id="BA">
+                    <img class="imgCards" src="assets/three-block.svg" alt="exception">
+                    <h4>Today I give exception</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Salvador - BA
+                    </div>
+                </div>
+                
+                <div class="card" id="RJ">
+                    <img class="imgCards" src="assets/four-block.svg" alt="node">
+                    <h4>Send Node</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Rio De Janeiro - RJ
+                    </div>
+                </div>
+                <div class="card" id="SC">
+                    <img class="imgCards" src="assets/five-block.svg" alt="backend">
+                    <h4>Only in the Backend</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Florianópolis - SC
+                    </div>
+                </div>
+                <div class="card" id="BA">
+                    <img class="imgCards" src="assets/six-block.svg" alt="ruby">
+                    <h4>This Ring is not Ruby</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Salvador - BA
+                    </div>
+                </div>
+
+                <div class="card" id="RJ">
+                    <img class="imgCards" src="assets/seven-block.svg" alt="c#">
+                    <h4>Pepper in other people's C# is refreshment</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Rio De Janeiro - RJ
+                    </div>
+                </div>
+                <div class="card" id="SP">
+                    <img class="imgCards" src="assets/eight-block.svg" alt="encache">
+                    <h4>EnCACHE here</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        São Paulo - SP
+                    </div>
+                </div>
+                <div class="card" id="BA">
+                    <img class="imgCards" src="assets/nine-block.svg" alt="java">
+                    <h4>Not worth anything but JAVA li</h4>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    <div class="location">
+                        <i class="ph-map-pin-light"></i>
+                        Salvador - BA
+                    </div>
+                </div>
+            </secton>
+        </div>
+    </main>
+</body>
+</html>

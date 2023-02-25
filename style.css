@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto";
+}
+
+i {
+    padding-right: 1rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    padding: 0;
+    margin: -0.1rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.imgCards {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+input, select, button {
+    font-family: "Roboto";
+    all: unset;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+header {
+    min-width: 144rem;
+    min-height: 53.4rem;
+    background-color: #F8F8FF;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+header::before {
+    content: "";
+    background-image: url(./assets/img-left-top.svg);
+    width: 40.7rem;
+    height: 34.5rem;
+
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+header::after {
+    content: "";
+    background-image: url(./assets/img-right-bottom.svg);
+    width: 41.4rem;
+    height: 33rem;
+
+    position: absolute;
+    z-index: 0;
+    bottom: -1.2rem;
+    right: 0;
+}
+
+header .content {
+    width: fit-content;
+    margin: auto;
+
+    position: relative;
+    z-index: 1;
+}
+
+header p {
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #E45858;
+}
+
+header h1 {
+    font-size: 4.8rem;
+    line-height: 125%;
+
+    color: #121214;
+    max-width: 64.7rem;
+}
+
+header h1 span {
+    color: #6246EA;
+}
+
+form {
+    margin-top: 4rem;
+    display: flex;
+    padding: 4rem;
+    gap: 2.4rem;
+
+    background-color: #FFFFFF;
+    border: 0.1rem solid #EAEAEA;
+    border-radius: 1rem;
+}
+
+.search-fild.input {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    text-align: left;
+    background: #F4F4FF;
+    border-radius: 1rem;
+    padding: 1.2rem 0.8rem 1.2rem 1.8rem;
+}
+
+.search-fild.select {
+    display: flex;
+    align-items: center;
+    color: rgb(97, 97, 97);
+}
+
+.select {
+    text-align: left;
+    background:#F4F4FF ;
+    border-radius: 1rem;
+    padding: 1.2rem 0.8rem 1.2rem 1.8rem;
+}
+
+form button {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+    border-radius: 1rem;
+    background-color: #6246EA;
+    color: white;
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+
+.ph-magnifying-glass-light {
+    color: #E45858;
+}
+
+.ph-map-pin-light {
+    color: #E45858;
+}
+
+.ph-caret-down-light {
+    color: #858793;
+}
+
+main .content {
+    max-width: 121.6rem;
+    margin: 10rem auto;
+}
+
+main .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.view {
+    display: flex;
+    padding: 0.8rem;
+    background-color: #FFFFFF;
+
+    border: 0.1rem solid #EAEAEA;
+    border-radius: 0.6rem;
+}
+
+main .primary {
+    border-radius: 0.5rem;
+    background-color: #6246EA;
+    text-align: center;
+    color: white;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+
+    width: 8.2rem;
+    height: 3.2rem;
+}
+
+main .secondary {
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    border: 0.1rem solid #EAEAEA;
+    text-align: center;
+    color: #6246EA;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+
+    width: 8.2rem;
+    height: 3.2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.card {
+    max-width: 38.4rem;
+    max-height: 33.9rem;
+    border: 0.1rem solid #EAEAEA;
+    border-radius: 1rem;
+}
+
+.card h4 {
+    display: flex;
+    font-size: 20px;
+    line-height: 140%;
+    padding: 1.6rem;
+    text-align: start;
+}
+
+.card p {
+    padding-left: 1.6rem;
+}
+
+.card .location {
+    padding: 1.6rem;
+}
